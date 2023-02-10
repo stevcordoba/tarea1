@@ -12,3 +12,15 @@ for(String s : lista) {
 }
     }
 }  
+
+public static int sumanat (int suma){
+    int res;
+    
+        if (suma>0){
+        res= suma+ sumanat(suma-1);    
+    }
+        else{
+            return 0;
+        }
+       return res;
+    }                                                             
