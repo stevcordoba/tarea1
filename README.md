@@ -24,3 +24,14 @@ public static int sumanat (int suma){
         }
        return res;
     }                                                             
+public static void checkBinary(int num) {
+    if (num == 0) {
+        System.out.println("Es binario");
+        return;
+    }
+    if (num % 10 > 1) {
+        System.out.println("No es binario");
+        return;
+    }
+    checkBinary(num / 10);
+}
