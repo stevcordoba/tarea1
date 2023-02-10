@@ -32,14 +32,16 @@ public static void checkBinary(int num) {
     }
     checkBinary(num / 10);
 }
-  public double calcExponencial (int n, int x){
-        if(x=1)    
-            if(x==0)
+    public double calcExponencial (int n, int x){
+        if(x==1)  
+            return n;
+        else if(x==0)
                 return 1;
             else
                 return n* calcExponencial(n,x-1);
-        else return n;
- }
+         }
+    }
+    
 public double factorial (int num){
  
             if(num<=1){
