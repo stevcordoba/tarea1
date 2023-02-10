@@ -15,15 +15,15 @@ for(String s : lista) {
 
 public static int sumanat (int suma){
     int res;
-    
-        if (suma>0){
-        res= suma+ sumanat(suma-1);    
-    }
-        else{
+       if (suma>0){
+          res= suma+ sumanat(suma-1);
+ }
+        else {
             return 0;
         }
        return res;
-    }                                                             
+    }    
+ 
 public static void checkBinary(int num) {
     if (num == 0) {
         System.out.println("Es binario");
@@ -35,3 +35,20 @@ public static void checkBinary(int num) {
     }
     checkBinary(num / 10);
 }
+  public double calcExponencial (int n, int x){
+        if(x=1)    
+            if(x==0)
+                return 1;
+            else
+                return n* calcExponencial(n,x-1);
+        else return n;
+ }
+public double factorial (int num){
+ 
+            if(num<=1){
+                return num;
+            }
+            return num * factorial(num - 1);
+        }
+                       
+                       
